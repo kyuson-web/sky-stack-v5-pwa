@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Sky Stack | 2.5D Balance Stacker</title>
+<meta name="description" content="A pure JS + Canvas 2D 2.5D block stacking game. Train your spatial balance!">
+<meta name="theme-color" content="#0e1526">
+<link rel="manifest" href="manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; background: #0e1526; overscroll-behavior: none; }
+body { touch-action: none; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: system-ui, -apple-system, sans-serif; }
+#stage { position: fixed; inset: 0; }
+#game { display: block; width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<main id="stage">
+<canvas id="game" role="img" aria-label="Sky Stack Game Canvas"></canvas>
+</main>
+<script src="game.js"></script>
+<script>
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+addEventListener('load', function() { navigator.serviceWorker.register('sw.js').catch(function(){}); });
+}
+</script>
+</body>
+</html>
