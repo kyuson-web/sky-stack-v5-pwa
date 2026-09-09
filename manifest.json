@@ -1,0 +1,16 @@
+{
+"name": "Sky Stack v5.0 - 2.5D Balance Stacker",
+"short_name": "Sky Stack",
+"description": "Stack blocks as high as you can. Pure JS + Canvas 2D, playable offline.",
+"lang": "en",
+"start_url": "./index.html",
+"scope": "./",
+"display": "standalone",
+"orientation": "portrait",
+"background_color": "#0e1526",
+"theme_color": "#0e1526",
+"icons": [
+{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+{ "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+]
+}
